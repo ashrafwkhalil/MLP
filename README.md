@@ -13,3 +13,5 @@ Training was extremely resource intensive, so I trained the 11-layer resnet for 
 ## Results
 If you open and run the Post request demo notebook, you will see the results of making 20 concurrent requests to the service. The example image is of a cat,
 and you will see that while both models correctly classify the image, the 50 layer resnet does so with significantly greater confidence.
+## Files
+There are 2 notebooks available, 'ResNet Implementations' shows the processing of the data, the building of the models, and the training of the models. 'Post Request Demo' demonstrates post requests being sent to the deployed models. 
