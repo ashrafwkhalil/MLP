@@ -4,7 +4,7 @@ The first model is an 11-layer custom implementation of a resnet that was traine
 and has a pretrained 50-layer resnet as a feature extractor. A few Dense layers are added to the end and trained to use the features extracted by the 
 pre-trained layers to make predictions on the CIFAR-10 dataset. The deployment is relatively simple, its just a single kubernetes cluster, and an istio
 virtual service that routes 70 percent of requests to the 11-layer resnet and the remaining 30 percent to the 50 layer resnet. The only point of the canary 
-deployment is to demonstrate that I know how to create a canary deployment. 
+deployment is to demonstrate that I know how to implement a canary deployment. 
 ## Data
 Data is just CIFAR-10, which is quite popular. I use minimal data augmentation by doing random horizontal and vertical flips on the original data set.
 ## Training
