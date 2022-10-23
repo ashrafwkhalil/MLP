@@ -1,5 +1,5 @@
 # Overview
-The goal here was to develop and train two different models, and deploy them on GCP using a canary deployment achieved by kubernetes and istio. 
+The goal here was to develop and train two different models, and deploy them on GCP using a canary deployment with kubernetes and istio. 
 The first model is an 11-layer custom implementation of a resnet that was trained from scratch on CIFAR-10, and the second model uses transfer learning
 and has a pretrained 50-layer resnet as a feature extractor. A few Dense layers are added to the end and trained to use the features extracted by the 
 pre-trained layers to make predictions on the CIFAR-10 dataset. The deployment is relatively simple, its just a single kubernetes cluster, and an istio
